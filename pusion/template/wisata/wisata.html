@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata</title>
+    <!-- Libraries -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.8.0/jquery.textcomplete.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='styles/FP.js')}}"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/CSS.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Rokkitt&family=Viga&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4856028e6f.js" crossorigin="anonymous"></script>
+  </head>
+</head>
+<body>
+<!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+      <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+        <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+        <span class="ml-2 pusion">PUSION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Header Img-->
+    <div>
+        <img src="https://pariwisataindonesia.id/wp-content/uploads/2020/01/pulau-umang-banten.jpg" class="w-100" alt="Gambar 1" />
+    </div>
+    <!-- end -->
+
+    <!-- ISI -->
+    <div class="my-4 container">
+      <div class="card text-center">
+          <div class="card-header" style="background-color: white;">
+              <ul class="nav nav-tabs card-header-tabs justify-content-md-center" id="myTab">
+                  <li class="nav-item">
+                      <a href="#pakettour" class="nav-link active" data-bs-toggle="tab">Paket Tour</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#penginapan" class="nav-link" data-bs-toggle="tab">Penginapan</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#pariwisata" class="nav-link" data-bs-toggle="tab">Pariwisata</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="card-body mt-2">
+            <div class="tab-content">
+              <!-- Paket Tour -->
+              <div class="tab-pane fade show active text-left" id="pakettour">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tour Package 01-03 Juli</h5>
+                          <p class="card-text">
+                            <i class="fa-solid fa-globe"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-plane-departure fa-sm"></i>
+                            <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                          </p>
+                          <a href="https://haraduta.com/open-trip/17168/pulau-sebesi-dan-gunung-krakatau-01-03-juli-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tour Package 08-10 Juli</h5>
+                          <p class="card-text">
+                            <i class="fa-solid fa-globe"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-plane-departure fa-sm"></i>
+                            <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                          </p>
+                          <a href="https://haraduta.com/open-trip/17169/pulau-sebesi-dan-gunung-krakatau-08-10-juli-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tour Package 15-17 Juli</h5>
+                          <p class="card-text">
+                            <i class="fa-solid fa-globe"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-plane-departure fa-sm"></i>
+                            <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                          </p>
+                          <a href="https://haraduta.com/open-trip/17170/pulau-sebesi-dan-gunung-krakatau-15-17-juli-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tour Package 22-24 Juli</h5>
+                          <p class="card-text">
+                            <i class="fa-solid fa-globe"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-plane-departure fa-sm"></i>
+                            <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                          </p>
+                          <p class="card-text">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                          </p>
+                          <a href="https://haraduta.com/open-trip/17171/pulau-sebesi-dan-gunung-krakatau-22-24-juli-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Tour Package 29-31 Juli</h5>
+                        <p class="card-text">
+                          <i class="fa-solid fa-globe"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-plane-departure fa-sm"></i>
+                          <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-sack-dollar"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                        </p>
+                        <a href="https://haraduta.com/open-trip/17172/pulau-sebesi-dan-gunung-krakatau-29-31-juli-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Tour Package 05-07 Agustus</h5>
+                        <p class="card-text">
+                          <i class="fa-solid fa-globe"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-plane-departure fa-sm"></i>
+                          <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-sack-dollar"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                        </p>
+                        <a href="https://haraduta.com/open-trip/17173/pulau-sebesi-dan-gunung-krakatau-05-07-agustus-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Tour Package 12-14 Agustus</h5>
+                        <p class="card-text">
+                          <i class="fa-solid fa-globe"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-plane-departure fa-sm"></i>
+                          <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-sack-dollar"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                        </p>
+                        <a href="https://haraduta.com/open-trip/17174/pulau-sebesi-dan-gunung-krakatau-12-14-agustus-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-hover-zoom--colorize">
+                      <img src="https://haraduta.com/images/item/big/pulau-sebesi-dan-gunung-krakatau-PSK-17168.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Tour Package 19-21 Agustus</h5>
+                        <p class="card-text">
+                          <i class="fa-solid fa-globe"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Haraduta.com</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-plane-departure fa-sm"></i>
+                          <span style="font-size: 15px; margin-left: 2px;">Pelabuhan Merak</span>
+                        </p>
+                        <p class="card-text">
+                          <i class="fa-solid fa-sack-dollar"></i>
+                          <span style="font-size: 15px; margin-left: 3px;">Rp 470.000 /pax</span>
+                        </p>
+                        <a href="https://haraduta.com/open-trip/17175/pulau-sebesi-dan-gunung-krakatau-19-21-agustus-2022/" class="text-decoration-none"><button class="btn btn-block text-white" style="background-color: #56c9b4">Detail</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div> 
+              <!-- Penginapan -->
+              <div class="tab-pane fade" id="penginapan">
+                <!-- cottage -->
+                <div class="card mb-3">
+                  <h5 class="judul-penginapan">Cottage Pulau Sebesi</h5>
+                  <h5 class="harga-penginapan"><mark style="background-color: rgb(253, 255, 137);">IDR 200-300/night</mark></h5>
+                  <h5 class="harga-penginapan"><mark style="background-color: rgb(253, 255, 137);">Alamat : Desa Tejang (Tidak jauh dari penyeberangan)</mark></h5>
+                  <div class="gallery">
+                    <img src="https://drive.google.com/uc?export=view&id=1daGySQjFEA0whQRT4dbszCIpxpeLncAe"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1qIMoBLU2h2deBlhZgdi4p8pSj-h1XeTV"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1bu_i7LnZrjJyUX0yHjTqALJjilQrm2Bl"/>
+                    <img src="https://drive.google.com/uc?export=view&id=13HWbJucPQwCuR1Iz9FdQPSHsMrJ9syyA"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1GRlqAJ_CzFshxcoaLnMh-Pkj7esgoKW9"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1XqK6JfmNa3emz9asQYHvUMVpxCivO14A"/>
+                  </div> 
+                </div>
+                <!-- Homestay -->
+                <div class="card mb-3">
+                  <h5 class="judul-penginapan mt-4">Homestay Pulau Sebesi</h5>
+                  <h5 class="harga-penginapan"><mark style="background-color: rgb(253, 255, 137);">Harga sesuai kesepakatan</mark></h5>
+                  <h5 class="harga-penginapan"><mark style="background-color: rgb(253, 255, 137);">Alamat : Desa Tejang (Tidak jauh dari penyeberangan)</mark></h5>
+                  <div class="gallery">
+                    <img src="https://drive.google.com/uc?export=view&id=1xjhVx9NGuBak1TZ06AWFXAZ8RWgsoIVk"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1hFMzPixuAy2TQLKuzRrT1h3bbGGEmJq-"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1uKwvnqy5Rsu0rnomrTw0McQlOaPk2xdO"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1-4sc6A5fubEgBa6bwfZwbt79sPoc1UJJ"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1JgEiJm97QQj_2IzhsFQzg3jXpVDLnHFq"/>
+                    <img src="https://drive.google.com/uc?export=view&id=1mh-2wqNayDDs4MEfZBwca4yXNYXm34gv"/>
+                  </div>  
+                </div>  
+              </div>
+              <!-- Pariwisata -->
+              <div class="tab-pane fade" id="pariwisata">
+                <div class="card card-efek mb-3">
+                  <div class="row">
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img src="https://drive.google.com/uc?export=view&id=1Zn3lNcwvJ5vIwyI7YxVpq6gUPcpzVQy3" alt="anak krakatau" style="max-width: 100%; padding: 10px; margin-left: 10px;"/>
+                    </div>
+                    <div class="col-md-7">
+                      <p class="card-title ml-5" style="margin-top: 20px; font-family: Dancing Script, cursive; font-size: 50px;">Gunung Anak Krakatau</p>
+                      <p class="card-text" style="text-align: justify; padding: 10px; margin-left: 20px;">Pasca-letusan di tahun 2018, Gunung Anak Krakatau berpotensi menjadi peluang penelitian bagi akademisi muda. Khususnya, mereka yang ingin mengetahui bagaimana suksesi terbentuk dan perubahan bentang alam di sepanjang Pulau Rakata, Pulau Sertung, dan Pulau Panjang. Inilah kesempatan untuk mendorong lahirnya pengamatan maupun penelitian lanjutan. Dengan berstatus sebagai cagar alam seluas 13.605 hektar, Krakatau menyimpan banyak nilai yang penting untuk dieksplorasi. Seperti bagaimana pembentukan kehidupan baru pasca letusan, penyimpanan karbon atau plasma nutfah.</p>
+                      <button class="btn mb-4" style="background-color: #56c9b4;"><a href="{{url_for('gak')}}" class="text-white text-decoration-none">Baca Selengkapnya</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-efek mb-3">
+                  <div class="row">
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img  src="https://3.bp.blogspot.com/-wOYFryzShN8/WnFVSIOVFOI/AAAAAAAAv1c/HW_Y7QQqnMAxlkiAMVXeI3wshQAIV6AXQCLcBGAs/s640/2018-01-31%2B10.47.34%2B1-01.jpeg" alt="Pulau Umang-Umang" style="max-width: 100%; padding: 10px; margin-left: 10px;"/>
+                    </div>
+                    <div class="col-md-7">
+                      <p class="card-title ml-5" style="margin-top: 20px; font-family: Dancing Script, cursive; font-size: 50px;">Pulau Umang-Umang</p>
+                      <p class="card-text" style="text-align: justify; padding: 20px; margin-left: 20px;">Berbicara soal sektor pariwisata di daerah Lampung yang semakin berkembang maju. Provinsi ini memiliki banyak destinasi wisata yang menawan dan menarik perhatian buat wisatawan, terutama keindahan alamnya. Salah satunya berlibur ke Pulau Umang Umang.Lokasinya terletak di Lampung Selatan, dan akses menuju pulau ini cukup mudah. Kamu bisa menyeberang dari Dermaga Canti di Kecamatan Rajabasa, Lampung Selatan menuju Pulau Sebesi.</p>
+                      <button class="btn mb-4" style="background-color: #56c9b4;"><a href="{{url_for('umang_umang')}}" class="text-white text-decoration-none">Baca Selengkapnya</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-efek mb-3">
+                  <div class="row">
+                    <div class="col-md-4 d-flex align-items-center">
+                      <img  src="https://wisato.id/wp-content/uploads/2019/12/snorkeling-1024x576-768x432.jpg" alt="anak krakatau" style="max-width: 100%; padding: 10px; margin-left: 10px;"/>
+                    </div>
+                    <div class="col-md-7">
+                      <p class="card-title ml-5" style="margin-top: 20px; font-family: Dancing Script, cursive; font-size: 50px;">Snorkeling</p>
+                      <p class="card-text" style="text-align: justify; padding: 20px; margin-left: 20px;">Bagi penikmat wisata bawah air, mereka juga bisa snorkeling di sekitar Pulau Umang-Umang yang disebut sebagai spot terbaik. Ombak laut yang sangat bersahabat membuat para pengunjung bisa menikmati keindahan alam bawah laut Lampung dengan tenang.</p>
+                      <button class="btn mb-4" style="background-color: #56c9b4;"><a href="{{url_for('snorkeling')}}" class="text-white text-decoration-none">Baca Selengkapnya</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="text-center mt-5" style="background-color: #56c9b4; margin-bottom: -16px">
+        <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+      </div>
+    </footer>
+    <!-- End -->
+
+    <script>
+      $(document).ready(function () {
+        console.log("document is ready");
+
+        $(".card-efek").hover(
+          function () {
+            $(this).addClass("shadow-lg").css("cursor", "pointer");
+          },
+          function () {
+            $(this).removeClass("shadow-lg");
+          }
+        );
+      });
+    </script>
+</body>
+</html>

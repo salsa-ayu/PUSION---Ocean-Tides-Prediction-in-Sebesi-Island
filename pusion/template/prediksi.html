@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pusion.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+
+    <title>Prediksi</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100" style="background-color: #f5f6f6">
+   
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+      <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+        <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+        <span class="ml-2 pusion">PUSION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-top: 60px">
+      <path
+        fill="#56C9B4"
+        fill-opacity="1"
+        d="M0,192L26.7,208C53.3,224,107,256,160,234.7C213.3,213,267,139,320,101.3C373.3,64,427,64,480,80C533.3,96,587,128,640,133.3C693.3,139,747,117,800,133.3C853.3,149,907,203,960,229.3C1013.3,256,1067,256,1120,250.7C1173.3,245,1227,235,1280,234.7C1333.3,235,1387,245,1413,250.7L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- END NAVBAR -->
+
+    <div class="container" style="margin-top: -130px">
+      <form action="{{url_for('predict')}}" method="POST">
+        <div class="form-row justify-content-md-center">
+          <div class="form-group col-md-2">
+            <label for="inputCity">Day</label>
+            <input id="Day" type="text" name="Day" class="form-control" id="inputDay" placeholder="contoh : 12" />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputMonth">Month</label>
+            <select id="Month" name="Month" class="form-control">
+              <option selected>Choose</option>
+              <option value="1">Januari</option>
+              <option value="2">Februari</option>
+              <option value="3">Maret</option>
+              <option value="4">April</option>
+              <option value="5">Mei</option>
+              <option value="6">Juni</option>
+              <option value="7">Juli</option>
+              <option value="8">Agustus</option>
+              <option value="9">September</option>
+              <option value="10">Oktober</option>
+              <option value="11">November</option>
+              <option value="12">Desember</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputYear">Year</label>
+            <input id="Year" type="text" name="Year" class="form-control" id="inputYear" placeholder="contoh : 2022"/>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputHour">Hour</label>
+            <select id="Hour" name="Hour" class="form-control">
+              <option selected>Choose</option>
+              <option value="00.00">00:00</option>
+              <option value="01.00">01:00</option>
+              <option value="02.00">02:00</option>
+              <option value="03.00">03:00</option>
+              <option value="04.00">04:00</option>
+              <option value="05.00">05:00</option>
+              <option value="06.00">06:00</option>
+              <option value="07.00">07:00</option>
+              <option value="08.00">08:00</option>
+              <option value="09.00">09:00</option>
+              <option value="10.00">10:00</option>
+              <option value="11.00">11:00</option>
+              <option value="12.00">12:00</option>
+              <option value="13.00">13:00</option>
+              <option value="14.00">14:00</option>
+              <option value="15.00">15:00</option>
+              <option value="16.00">16:00</option>
+              <option value="17.00">17:00</option>
+              <option value="18.00">18:00</option>
+              <option value="19.00">19:00</option>
+              <option value="20.00">20:00</option>
+              <option value="21.00">21:00</option>
+              <option value="22.00">22:00</option>
+              <option value="23.00">23:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button id="tekan" onclick="kirim()" type="submit" class="btn text-light text-center" style="background-color: #56c9b4; width: 66.5%">Predict</button>
+        </div>
+      </form>
+
+      <div id="show" class="bg-white mt-5 rounded-lg p-3 text-center mx-auto" style="width: 90%">
+        <div class="text-center my-4" id="h-input"></div>
+        <h4 id="hasil" class="p-3 w-25 mx-auto my-2" style="background-color: #fff44f; border-radius: 10px">{{hasil}}</h4>
+        <div class="mt-3">
+          <div class="py-2 px-5">
+            <p>
+              Kondisi yang memengaruhi pasang surut air laut adalah gaya gravitasi dari benda-benda langit, khususnya bulan dan matahari. Adanya gaya gravitasi bulan atau matahari terhadap massa air laut akan menimbulkan gelombang laut.
+            </p>
+            <p>Pasang akan terjadi saat bulan purnama karena jarak air laut dengan pusat bulan sangat dekat daripada pusat bumi ke pusat bulan. Sedangkan surut akan terjadi saat bumi tidak sedang terjadi bulan baru atau bulan purnama.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="mt-auto">
+      <div class="text-center mt-5" style="background-color: #56c9b4; margin-bottom: -16px">
+        <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+      // function kirim() {
+      //   var id_hari = document.getElementById("Day");
+      //   var id_bulan = document.getElementById("Month");
+      //   var id_tahun = document.getElementById("Year");
+      //   var id_jam = document.getElementById("Hour");
+      //   var id_hasil = document.getElementById("h-input");
+
+      //   id_hasil.innerText = "Kondisi air pada " + id_hari.value + "-" + id_bulan.value + "-" + id_tahun.value + " pada jam " + id_jam.value + " adalah : ";
+      // }
+
+      // $(document).ready(function () {
+      //   $("button").click(function () {
+      //     var id_hari = $("#Day").val();
+      //     var id_bulan = $("#Month").val();
+      //     var id_tahun = $("#Year").val();
+      //     var id_jam = $("#Hour").val();
+
+      //     $("#h-input").html(id_hari);
+      //     $("#Day").val("");
+      //   });
+      // });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>

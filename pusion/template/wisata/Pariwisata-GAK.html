@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata-GAK</title>
+    <!-- Libraries -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.8.0/jquery.textcomplete.js"></script>
+    <script type="text/javascript" src="jquery-comments.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='styles/FP.js')}}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/CSS.css') }}" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Dancing+Script:wght@700&family=Lobster&family=Permanent+Marker&family=Rokkitt&family=Tiro+Devanagari+Marathi&family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4856028e6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+        <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+          <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+          <span class="ml-2 pusion">PUSION</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+            <li class="nav-item ml-4 active">
+              <a class="nav-link" href="{{url_for('index')}}">Home</a>
+            </li>
+            <li class="nav-item ml-4 active">
+              <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+            </li>
+            <li class="nav-item ml-4 active">
+              <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+            </li>
+            <li class="nav-item ml-4 active">
+              <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
+
+      <!-- Isi -->
+      <div class="container my-4">
+        <p class="text-center p-4 pariwisata-title">Wisata Ilmiah Gunung Anak Krakatau</p>
+        <img src="https://drive.google.com/uc?export=view&id=1Zn3lNcwvJ5vIwyI7YxVpq6gUPcpzVQy3" alt="Gunung anak krakatau" class="pariwisata-img mx-auto">
+        <div class="container">
+            <p style="text-align: center;"><b><q>Pulau ini merupakan daratan yang paling dekat dengan Gugusan Krakatau dan turut <br> menjadi saksi kedahsyatan letusan besar Krakatau tahun 1883.</q></b></p>
+            <p class="isi">Krakatau berstatus Cagar Alam dan Cagar Alam Laut berdasarkan Keputusan Menteri Kehutanan Nomor: 85/Kpts-II/1990 tanggal 26 Februari 1990 seluas 130 hektar. 
+                Kawasan cagar alam menurut UU Nomor 5 Tahun 1990 dan PP Nomor 28 tahun 2011 tentang Penyelenggaraan Kawasan Suaka Alam dan Kawasan Pelestarian Alam, dapat dimanfaatkan sebagai penelitian 
+                dan pengembangan ilmu pengetahuan, pendidikan konservasi alam, serta pemanfaatan plasma nutfah untuk menunjang budidaya.<br></p>
+            <p class="isi">
+                Peruntukan Cagar Alam (CA) dan Cagar Alam Laut (CAL) menurut UU Nomor 5 tahun 1990 tentang Konservasi Sumber Daya Alam dan Ekosistemnya dan PP Nomor 28 tahun 2011 tentang Penyelenggaraan 
+                Kawasan Suaka Alam dan Kawasan Pelestarian Alam, disebutkan bahwa cagar alam dapat dimanfaatkan untuk kegiatan:
+                <ol>
+                    <li>Penelitian dan pengembangan ilmu pengetahuan;</li>
+                    <li>Pendidikan dan peningkatan kesadartahuan konservasi alam;</li>
+                    <li>Penyerapan dan/atau penyimpanan karbon; dan</li>
+                    <li>Pemanfaatan sumber plasma nutfah untuk penunjang budidaya.</li>
+                </ol>
+            </p>
+            <p class="isi">Kepala Kesatuan Pengelolaan Hutan Konservasi [KPHK] Krakatau SKW III BKSDA Bengkulu-Lampung, menjelaskan perlu beberapa prosedur untuk dapat melakukan riset ke Anak Krakatau. Antara lain menyerahkan surat dan proposal kegiatan penelitian dan mempresentasikan apa yang akan dikerjakan.</p>
+            <p class="isi">CA dan Cal Kepulauan Krakatau merupakan kawasan konservasi yang memiliki beragam nilai penting, terutama dari perspektif sejarah alam (natural history). Cagar Alam Pulau Anak Krakatau juga ditetapkan sebagai Situs Warisan Dunia (World Haritage Site) karena keunikan dan kekhasan yang dimilikinya. 
+                CA krakatau memiliki reputasi dunia, selain karena sejarah letusannya yang tercatat yang terbesar, juga karena Krakatau merupakan laboratorium alam yang ideal untuk mengamati proses bagaimana kehidupan pernah musnah, memulai kembali dan terus berlangsung pada suatu ekosistem kepulauan.</p>
+            <p class="isi">Sehingga, ketika mengunjungi Cagar Alam Kepulauan Krakatau saat ini, dan menyaksikan pulau-pulau peninggalan gunung Krakatau purba, imajinasi kita akan sampai pada bayangan mengenai dahsyatnya letusan yang pernah dialami oleh gunung ini di masa lalu. Lalu, imaji kita pun akan berjalan pada 
+                pemikiran bagaimana kehidupan flora dan fauna yang ada saat ini bermula. Proses yang bermula dari nol kehidupan menjadi komunitas flora dan fauna yang beragam.</p>
+            <p class="isi">Prosesi Krakatau ini dapat memberikan pengetahuan bagi kita semua mengenai bagaimana bumi ini memulai kehidupannya. Pada tahun 1883, Pegunungan Api Krakatau (Gunung Danan dan Perbuwatan) meletus dan diyakini memusnahkan seluruh flora dan fauna yang sebelumnya ada di kompleks pegunungan ini. 
+                Secara perlahan, kehidupan di Kepulauan Krakatau mulai kembali. Di Kepulauan Krakatau, saat ini tercatat terdapat 206 fungi, 13 jenis lichens, 61 jenis paku-pakuan dan 257 jenis spermathophyta. Sementara faunanya terdiri dari sekitar 65 jenis aves, seperti Centropus bengalensis, Coprimolgus 
+                offinis, Falco servus, Lalega nigra, Tecrycotera relitea, Plegadis sp, dan Nectarina sp. Terdapat juga mamalia jenis tikus dan kalong, reptil jenis biawak, ular, dan penyu.</p>
+            <blockquote class="mx-auto">
+                Krakatau memberikan pelajaran tentang Bumi yang hidup dan terus tumbuh. Kelahiran dan kematian gunung api, lalu kebangkitan kembali ekologi Sudahkah kita belajar darinya.<br>
+                <i>- Anonim</i>
+            </blockquote>
+        </div>
+        <div class="gallery">
+            <img src="https://www.superlive.id/storage/superadventure/2019/08/08/ac805602bedd.jpg"/>
+            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/03/29/3549473584.jpg"/>
+            <img src="https://img.okezone.com/content/2021/02/08/408/2358748/bertamasya-ke-pulau-anak-krakatau-ini-sederet-aktivitas-seru-bisa-dilakukan-7TuE1Yzgf1.jpg"/>
+            <img src="https://wisato.id/wp-content/uploads/2020/01/anak-krakatau-gunung-cagar-nan-cantik-di-selat-sunda_112028_1140.jpg"/>
+            <img src="https://www.bantennews.co.id/wp-content/uploads/2018/06/PAKET-WISATA-GUNUNG-KRAKATAU-768x514.jpg"/>
+            <img src="https://asset.kompas.com/crops/WwnR6f56W_7LvDbGKgaCz4ygFn4=/0x0:1000x667/750x500/data/photo/2019/07/29/5d3e7212685f2.jpg"/>
+        </div>
+        <div class="m-4">
+            <div class="card detail-GAK">
+                <div class="card-header mx-auto" style="background-color: white;">
+                    <ul class="nav nav-tabs card-header-tabs justify-content-md-center" id="myTab">
+                        <li class="nav-item">
+                            <a href="#akses" class="nav-link active" data-bs-toggle="tab">Aksesibilitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#keanekaragaman" class="nav-link" data-bs-toggle="tab">Keanekaragaman Hayati</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#florafauna" class="nav-link" data-bs-toggle="tab">Flora dan Fauna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#iklim" class="nav-link" data-bs-toggle="tab">Iklim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#ocean" class="nav-link" data-bs-toggle="tab">Oceanografis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#topologi" class="nav-link" data-bs-toggle="tab">Topologi dan Jenis Tanah</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#vulkanologi" class="nav-link" data-bs-toggle="tab">Vulkanologi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body mt-2">
+                    <div class="tab-content">
+                      <!-- Aksesibilitas -->
+                        <div class="tab-pane fade show active text-left" id="akses">
+                            <h5 class="title-detail">Aksesibilitas</h5>
+                            <p class="isi">Untuk mencapai Krakatau ada beberapa rute yang bisa ditempuh antara lain:</p>
+                            <p class="isi">a)  Jakarta - Anyer - Krakatau<br>
+                                Ini adalah rute terpendek untuk mencapai Krakatau dari Jakarta.  Dari Jakarta  ke Anyer dapat ditempuh melalui jalan darat + 1,5 jam menggunakan bus umum atau kendaraan sewa/taksi.  
+                                Dari Anyer ke Krakatau ditempuh melalui perjalanan laut dengan speed boat  selama + 1 jam.
+                            </p>
+                            <p class="isi">b)  Jakarta - Kalianda - Krakatau<br>
+                                Jakarta ke Kalianda (Lampung) dapat ditempuh dengan kendaraan umum atau pribadi melalui penyeberangan Merak-Bakauheni yang dapat ditempuh selama + 4 jam. Dari pelabuhan Canti-Kalianda 
+                                perjalanan ke Krakatau  dapat diteruskan dengan menggunakan kapal masyarakat atau sewa yang memakan waktu + 3 jam.  Kapal/speed boat yang melayani penyeberangan ke Krakatau dari pelabuhan Canti saat ini masih terbatas.
+                            </p>
+                            <p class="isi">c)  Jakarta - Bandar Lampung - Krakatau
+                                Dari Jakarta ke Bandar Lampung dapat ditempuh melalui jalan darat maupun jalan udara.  Beberapa perusahaan penerbangan  melayani penerbangan  rute Jarkata - Bandar Lampung setiap hari diantaranya Sriwijaya Air, 
+                                Lion Air dan Garuda Indonesia dengan waktu tempuh + 30 menit.  Dari pelabuhan Lempasing, Bandar Lampung ke Krakatau dapat dilanjutkan dengan speed boat sewa memerlukan waktu + 1,5 jam.  Ongkos sewa speed boat (kapasitas 15 orang) dari Bandar Lampung ke Krakatau .+ Rp.2,5 juta per hari.
+                            </p>
+                        </div>
+                      <!-- Keanekaragaman Hayati -->
+                        <div class="tab-pane fade show text-left" id="keanekaragaman">
+                            <h5 class="title-detail">Potensi Keanekaragaman Hayati</h5>
+                            <p class="isi">
+                                Keanekaragaman hayati merupakan keanekaragaman atau kekayaan yang mencakup keanekaragaman gen, Kenakeragaman jenis dan kleanekaragaman ekosistem yang ada di suatu wilayah. Dalam dokumen rencana pengelolaan ini, keanekaragaman hayati dalam hal ini diartikan sebagai proporsi keterwakilan dari masing-masing spesies 
+                                dalam wilayah atau habitat tertentu. Suatu habitat dapat memiliki jumlah spesies yang sama walaupun dengan komposisi jenis yang berbeda (Meijaard & D. Sheil. 2007).
+                            </p>
+                        </div>
+                      <!-- Flora dan Fauna -->
+                        <div class="tab-pane fade show text-left" id="florafauna">
+                            <h5 class="title-detail">Potensi Flora dan Fauna</h5>
+                            <h6><i><b>Pulau Rakata</b></i><br></h6>
+                            <p class="isi">Pulau Rakata terdiri atas berbagai formasi vegetasi, yaitu formasi pescaprae, formasi barringtonia, formasi cemara, dan formasi hutan pedalaman. Vegetasi pantai (coastal vegetation) dengan formasi pescaprae (Ipomoea pescaprae) tersebar mulai dari lingkungan pantai sampai ke daratan sebelum masuk ke daerah formasi hutan pantai. Jenis-jenis tumbuhan yang banyak ditemukan antara lain: Ipomoea pescaprae, Canavalia maritima, Vigna marina, Spinifex littoralis, dan Wedelia biflora.<br></p>
+                            <p class="isi">Formasi barringtonia ditemukan di bagian belakang formasi pescaprae atau terkadang sampai ke daerah pantai. Jenis yang mendominasi formasi ini adalah keben (Barringtonia asiatica) dan ketapang (Terminalia catappa). Jenis tumbuhan lain yang juga ditemukan dalam formasi ini adalah Hibiscus tiliaceus, Pandanus tectoris, Morinda citrifolia, Erythrina orientalis, Ficus fulva, Ficus septica, Macaranga tanarius, Hernandia peltata, Calophyllum inophyllum, Desmodium umbellatum, dan Melastoma affine.<br></p> 
+                            <p class="isi">Formasi cemara merupakan formasi peralihan antara formasi hutan pantai dengan daerah pendalaman. Jenis tumbuhan yang mendominasi adalah Casuarina equisetifolia. Lebih dalam lagi memasuki pedalaman (Inland vegetation) dengan formasi hutan neonauclea, di Pulau Rakata didominasi oleh jenis Neonauclea calycina yang merupakan spesies dengan kanopi yang dominan di antara pohon-pohon yang ada di hutan pedalaman terutama dari elevasi antara 45 - 550 m dpl. Pada selang elevasi tersebut dijumpai adanya 
+                                asosiasi dengan jenis lain seperti Vernonia arborea, Macaranga tanarius, dan Pipturus argentus.<br></p>
+                            <p class="isi">Satwa yang dapat dijumpai di Pulau Rakata antara lain; biawak (Varanus salvator), tikus (Rattus rattus), kalong (Pteropus vampyrus), kadal (Mabdio multifasciata), ular sanca (Phyton sp), ular dahan, burung raja udang (Halcyon funebris), burung troco (Plegadis falcinellus), burung elang (Falco servus), berbagai jenis serangga (semut, lebah, jangkerik, tonggerek, belalang), tokek, cacing, kepiting dan lain-lain. Jenis penyu hijau (Chelonia mydas) juga ada di Pulau Rakata.</p>
+                            
+                            <h6><i><b>Pulau Sertung</b></i><br></h6>
+                            <p class="isi">Pulau Sertung terdiri atas berbagai formasi vegetasi, yaitu formasi pescaprae, formasi hutan ketapang, formasi cemara, dan formasi hutan pedalaman. Formasi pescaprae ditemukan pada sisi tanjung yang semakin lama semakin menghilang akibat abrasi pantai. Formasi hutan ketapang berkembang dari pinggir pantai hingga pedalaman yang didominasi oleh jenis Terminalia catappa.<br></p>
+                            <p class="isi">Di bagian utara pulau dominasi ketapang disaingi oleh Timonius compressicaulis dan Gnetum gnemon. Formasi cemara dengan dominasi Casuarina equisetifolia banyak menutupi sebagian besar tanjung dalam bentuk woodland dengan kerapatan bervariasi. Hutan pedalaman Sertung didominasi oleh 2 tipe inland forest yaitu dominasi Dysoxylum densiflorum dan Timonius compressicaulis. Hutan dysoxylum banyak ditemui di bagian punggung bukit dan lereng yang menghadap ke timur hingga selatan tanjung.<br></p>
+                            <p class="isi">Satwa yang dijumpai di Pulau Sertung antara lain burung elang (Falco servus), burung raja udang (Halcyon funebris), burung troco (Plegadis falcinellus), kacer (Copsychus sp), podang (Oriolus chinearis), wili-wili (Escasus magnirostris) dan walet (Rhaphidura sp). Juga ditemukan jenis fauna lainnya antara lain biawak (Varanus salvator), tikus (Rattus rattus), kalong, kadal, ular sanca, ular dahan, kelabang, berbagai jenis serangga (semut, kunang-kunang, lebah, jangkerik, tonggerek, dan belalang), 
+                                cacing, kepiting dan lainnya. Jenis penyu hijau (Chelonia mydas) juga ditemukan di pulau ini. Selain itu, ditemukan juga berbagai jenis ikan karang di perairan sekitar Pulau Sertung.<br></p>
+                            <p class="isi">Sebelah timur hingga timur laut Pulau Setung merupakan tempat yang terlindung dari arus kuat dan dulunya ditumbuhi oleh terumbu karang. Namun, pasir yang dipengaruhi arus air dan angin, lambat laun menutupi hamparan terumbu karang yang ada. Lokasi hamparan terumbu karang ini sekarang sudah berubah menjadi daratan yang ditutupi vegetasi dengan formasi cemara laut dan formasi pescaprae. Jenis-jenis terumbu karang yang tumbuh di sekitar Pulau Sertung antara lain Acropora submassive, soft coral, 
+                                Coral foliose, dan Coral submassive.<br></p>
+                            <p class="isi">Di bagian timur pulau ini terdapat pos jaga yang berfungsi sebagai pos pengamanan kawasan. Pos jaga ini dilengkapi dengan fasilitas MCK. Terdapat juga sumber air tawar, walaupun dengan debit yang kecil. Di daratan bagian atas pulau ini terdapat plot penelitian yang dibuat oleh LIPI dan Oxford University.<br></p>
+                            
+                            <h6><i><b>Pulau Panjang</b></i><br></h6>
+                            <p class="isi"></p>Komunitas tumbuhan yang terdapat di Pulau Panjang juga bervariasi mulai dari pantai hingga pedalaman. Hutan pantai didominasi oleh formasi pescaprae, formasi ketapang dan formasi cemara. Hutan pedalaman didominasi oleh formasi timonius dan desoxylum. Vegetasi pantai dengan formasi pescaprae didominasi oleh jenis Ipomoea pescaprae. Tepi pantai Pulau Panjang banyak didominasi oleh karang yang terjal, oleh karena itu formasi pescaprae hanya ditemukan di pantai yang landai di bagian utara pulau.
+                            <p class="isi">Di belakang formasi pescaprae atau pada tepi pantai yang terjal akan langsung dijumpai formasi hutan ketapang. Jenis yang mendominasi dalam formasi hutan ini adalah ketapang (Terminalia catappa) dan keben (Barringtonia asiatica). Jenis lain yang dapat dijumpai dalam formasi ini, antara lain waru pantai (Hibiscus tiliaceus), Premna corimbosa, Pandanus tectorius, Hernandia peltata, Ficus fulva, dan Melastoma affine.<br></p>
+                            <p class="isi">Formasi hutan cemara yang didominasi oleh Casuarina equisetifolia banyak terlihat menutupi sebagian besar area pulau yang memiliki kelerengan curam dan berkarang. Di bagian utara pulau, terlihat formasi ini dihuni juga oleh jenis-jenis lain seperti Timonius compressicaulis, Neonauclea calycina, dan Dysoxylum gaudichaudianum. Formasi hutan timonius didominasi oleh jenis Timonius compressicaulis. Formasi hutan ini banyak mendominasi pada daratan tinggi di bagian selatan pulau ini. Pada bagian 
+                                bawah tegakan timonius terdapat beberapa jenis tumbuhan bawah dan semak, seperti Ardisia humilis, Leocosyke capitelatta, Macaranga tanarius, Mellastoma affine, Piper aduncum, Dysoxylum gaudichaudianum, Stenochlaera palustris, dan Nephrolephis spp. Selain itu, ditemukan juga tumbuhan merambat seperti Elaeagnus latifolia pada formasi ini.<br></p>    
+                            <p class="isi">Lebih ke dalam lagi, terdapat formasi hutan dysoxylum yang didominasi oleh Dysoxylum gaudichaudianum. Jenis ini mendominasi strata tajuk tertinggi. Di lapisan strata ke dua banyak diisi oleh Timonius compressicaulis, Ficus montana, dan Ficus tinctoria. Tumbuhan bawah dan semak pada formasi hutan ini banyak diisi oleh jenis Ficus fulva, Ficus septica, Macaranga tanarius, Buchanania arborescens, Euphatoriun odoratum, Lantana camara, Saccharum spontaneum, Cyrtandra sulcata, dan Schefflera polybotrya.<br></p>    
+                            <p class="isi">Satwa yang dijumpai di Pulau Panjang antara lain burung elang (Falco servus), burung raja udang (Halcyon funebris), burung troco (Plegadis falcinellus), kacer (Copsychus sp), podang (Oriolus chinearis), wili-wili (Escasus magnirostris), dan walet. Juga ditemukan jenis fauna lainnya antara lain biawak (Varanus salvator), tikus (Rattus rattus), kalong, kadal, ular sanca, ular dahan, kelabang, berbagai jenis serangga (semut, kunang-kunang, lebah, jangkerik, tonggerek, dan belalang), cacing, kepiting, 
+                                dan lainnya. Jenis penyu hijau (Chelonia mydas) juga di temukan di pulau ini. Selain itu, ditemukan juga berbagai jenis ikan karang di perairan sekitar Pulau Panjang.<br></p>    
+                            
+                            <h6><i><b>Pulau Anak Krakatau</b></i><br></h6>
+                            <p class="isi">Pulau Anak Krakatau pertama kali muncul ke permukaan pada 27 Juni 1927. Sejak kemunculannya, tumbuhan pioneer dan semai beberapa spesies tipe pantai telah mulai muncul. Namun, semuanya kembali musnah akibat letusan dahsyat pada tahun 1933.Meskipun Gunung Anak Krakatau tetap aktif, tetapi pada bagian tertentu, terutama pada sisi timur sudah banyak ditumbuhi vegetasi. Daerah punggung gunung pada umumnya masih belum tertutupi vegetasi. Pada daerah ini dijumpai jenis tumbuhan pioner seperti gelagah 
+                                (Saccharum spontaneum) yang dapat hidup pada daerah dengan kondisi kurang air karena bersimbiosis dengan Azospirillum lippoferrum. Pada bagian yang telah ditumbuhi gelagah mempercepat proses pelapukan pasir di sekitarnya yang kemudian akan tumbuh jenis Melastoma affine dan jenis-jenis tumbuhan lainnya.<br></p>    
+                            <p class="isi">Dari arah pantai di Timur Gunung Anak Krakatau telah ditumbuhi berbagai jenis tumbuhan dengan kepadatan yang sedang. Pada ketinggian 25 meter pertama dari arah pantai ditumbuhi oleh jenis Ipomoea pescaprae, Cassytha filiformis, dan Canavalia maritima serta Casuarina equsetifolia. Pada bagian agak ke dalam, ditemukan jenis Barringtonia asiatica yang masih muda serta jenis Terminalia catappa yang diselingi berbagai jenis tumhuhan seperti Pandanus sp dan sebagainya. Pada bagian pedalaman dijumpai 
+                                berbagai jenis seperti Calophyllum inophyllum, Hibiscus tiliaceus, dan Radermachera glandulosa.Pada bagian ke atas ditemukan hutan muda yang didominasi oleh jenis casuarina dengan kerapatan sedang. Semai Casuarina equsetifolia bahkan sering kali dapat ditemukan pada daerah lereng yang hanya dapat ditumbuhi gelagah. Di bawah canopi casuarina dapat juga ditemukan jenis tumbuhan semak dan tumbuhan merambat. Pada hutan pedalaman di bagian tumur pulau, komunitas yang mendominasi adalah hutan neonauclea, 
+                                hutan timonius dan hutan dysoxylum yang bercampur dengan jenis-jenis pohon lain dalam jumlah yang sedikit.<br></p>
+                            <p class="isi">Di gugusan kepulauan Krakatau terdapat lebih dari 40 jenis burung dan diprediksi terus mengalami peningkatan jumlah jenis. Keberadaan burung-burung tertentu berhubungan dengan proses penyerbukan dan distribusi tumbuhan karena burung tersebut dapat menjadi agen penyebaran tumbuhan. Jenis burung yang dominan ditemukan di Kepulauan Krakatau antara lain Centropus bengalensis, Coprimolgus affnis, Falco servus, Lalge nigra, Tecrycotera relitea, Plegadis sp, dan Nectarina sp. Selain jenis-jenis burung, 
+                                di Kepulauan Krakatau juga ditemukan jenis biawak (Varanus salvator), tikus (Rattus rattus), kalong, kadal, ular sanca, ular dahan, kelabang, berbagai jenis serangga (semut, kunang-kunang, lebah, jangkerik, tonggerek, dan belalang), cacing, kepiting dan lainnya. Keanekaragaman fauna juga ditemukan di perairan Krakatau. Terdapat lebih dari 54 jenis ikan yang didominasi oleh anggota famili Chaetodonfidae.<br></p>
+                        </div>
+                      <!-- Iklim -->
+                        <div class="tab-pane fade show text-left" id="iklim">
+                            <h5 class="title-detail">Kondisi Iklim</h5>
+                            <p class="isi">Di Kepulauan Krakatau musim penghujan berlangsung selama bulan Desember-April dengan curah hujan tahunan rata-rata 2.260 mm, sedangkan musim kemarau berlangsung selama bulan Juli sampai Oktober. Pada bulan Juli - Oktober kelembaban udara mencapai 70-81%, sedang kelembaban udara tertinggi diperoleh pada bulan Desember yaitu 85 %.
+                                Temperatur udara relatif konstan, temperatur rata-rata tertinggi terjadi pada bulan Oktober (28,27°C) dan temperatur terendah terjadi pada bulan Juli dan Nopember (26,9°C). Menurut klasifikasi iklim Schmith dan Ferguson (1952) kawasan Kepulauan Krakatau termasuk daerah tipe iklim B dengan nilai Q= 29,4 namun menurut klasifikasi Koppen, iklim di daerah tersebut digolongkan ke dalam tipe A.<br></p>
+                            <p class="isi">Pada bulan-bulan Desember sampai Februari sering terjadi cuaca buruk. Pada saat itu angin bertiup kencang disertai gelombang yang tinggi, hal ini sering mengakibatkan terjadinya kecelakaan di laut. Angin barat membawa uap air atau hujan dari Samudera Hindia dan angin timur membawa udara kering dari Australia, menimbulkan gelombang laut yang mampu mengikis pantai terutama Pulau Sertung dan  Pulau Anak Krakatau. Perubahan pola iklim dan cuaca di kawasan Kepulauan Krakatau juga dipengaruhi oleh arah 
+                                datangnya angin. Pada musim angin barat bertiup, kawasan Kepulauan Krakatau mengalami musim hujan dan sebaliknya.<br></p>
+                        </div>
+                      <!-- Oceanografis -->
+                        <div class="tab-pane fade show text-left" id="ocean">
+                            <h5 class="title-detail">Kondisi Oceanografis</h5>
+                            <p class="isi">Kepulauan Krakatau terletak di perairan Selat Sunda yang menghubungkan massa air Samudera Hindia dengan massa air Laut Cina Selatan. Oleh sebab itu pertukaran massa air selalu terjadi di selat ini dalam jumlah kecil hingga besar. Hal tersebut dimungkinkan karena pola arus di perairan Selat Sunda senantiasa berubah-ubah sesuai dengan pergiliran musim dan umumnya menuju ke Samudera Hindia. Pertukaran air laut yang cukup besar dari Laut Cina Selatan ke Samudera Hindia dan sebaliknya, dilaporkan senantiasa 
+                                menimbulkan arus laut cukup kuat di Selat Sunda.<br></p>
+                            <p class="isi">Garis kedalaman laut 200 m terletak kurang lebih 10 km ke arah barat dari Pulau Sertung. Perairan yang agak dalam berbentuk palung ini dijumpai dalam kawasan yang terletak di antara pulau Anak Krakatau dan pulau Rakata.<br></p>
+                            <p class="isi">Temperatur tinggi permukaan perairan Selat Sunda terjadi pada bulan-bulan April, Mei, Juni dan Nopember dengan temperatur tertinggi berkisar antara 26 - 29 °C sedangkan temperatur rendah berkisar antara 26 - 27 °C terjadi pada bulan Juli sampai Oktober. Salinitas perairan Kepulauan Krakatau dan sekitarnya berkisar antara 32% sampai dengan 34%.<br></p>
+                        </div>
+                      <!-- Topologi dan jenis tanah -->
+                        <div class="tab-pane fade show text-left" id="topologi">
+                            <h5 class="title-detail">Kondisi Topografi dan Jenis Tanah</h5>
+                            <p class="isi">Fisiografi Kepulauan Krakatau umumnya bergelombang dan bergunung. Topografi Pulau Anak Krakatau sendiri senantiasa berubah sesuai dengan aktivitas vulkanik yang menambah ketinggian sampai 4-4,5 m/tahun. Pertumbuhan Gunung Api Anak Krakatau dari enapan erupsi rata-rata 2,77 juta m3/tahun. Proses pertumbuhan ini menjadi keunikan Cagar Alam Kepulauan Krakatau di dunia. Demikian pula halnya perkembangan keadaan fisiografi Pulau Sertung, senantiasa mengalami perubahan yang diakibatkan oleh adanya abrasi. 
+                                Puncak tertinggi pada gugusan Kepulauan Krakatau terdapat di Pulau Rakata dengan tinggi 813 m dpl, sedangkan laut terdalam terdapat di antara Pulau Sertung dengan Pulau Rakata, terutama pada bagian terdalam kaldera dengan kedalaman mencapai 250 m. Daerah palung tersebut berbentuk lingkaran dan diperkirakan terbentuk setelah letusan dahsyat gunung Krakatau pada tahun 1883 (BKSDA Lampung, 2012).<br></p>
+                            <p class="isi">Pembentukan tanah di Kepulauan Krakatau antara lain di Pulau Sertung terdiri dari batuan tuff yang peka terhadap erosi dan cenderung terdiri berkembang ke arah andosol. Dapat disimpulkan bahwa pelapukan mekanis lebih kuat daripada pelapukan biologi dan kimia. Di Pulau Rakata terdapat tiga perkembangan tanah yaitu: Andosol di bagian tengah pulau, aluvial di bagian selatan, sedangkan pada Pulau Anak Krakatau bagian tenggara terdapat tegakan pohon cemara tanahnya cenderung disebut Regosol pasir pantai (BKSDA Lampung,2012).<br></p>
+                            <p class="isi">Sebagian besar kawasan daratan Pulau Rakata, Pulau Panjang, dan Pulau Sertung tertutup bahan hasil letusan gunung api pada tahun 1883, sedangkan di Pulau Anak Gunung Krakatau yang merupakan hasil proses geologi di bawah permukaan laut bekas kaldera Gunung Krakatau, dilapisi lahar pyroclastics yang dihasilkan dari aktivitas vulkaniknya. Lapisan hasil aktivitas gunung api  terutama abu dan batu apung dari Pulau Anak Krakatau ini diperkirakan mencapai ketebalan 25 meter dan lapisan yang paling tebal terdapat di 
+                                bagian selatan Pulau Sertung dan bagian barat Pulau Rakata. Namun demikian, batu apung ini tidak ditemukan pada Anak Gunung Krakatau, hanya di bagian pantai saja ditemukan pecahan batu apung yang merupakan hanyutan dari pulau lain.<br></p>
+                        </div>
+                      <!-- Vulkanologi -->
+                        <div class="tab-pane fade show text-left" id="vulkanologi">
+                            <h5 class="title-detail">Vulkanologi</h5>
+                            <p class="isi">Gunung Api Anak Krakatau merupakan gunung api aktif starato tipe A yang lahir sebagai gunung muda aktif di dalam Kaldera Krakatau hasil letusan tahun 1883. Letusan dimulai sejak tahun 1927 - sekarang yang dicirikan oleh letusan abu dan aliran lava (tipe letusan Strombolian). Letusan strombolian adalah tipe letusan gunung api yang dicirikan oleh letusan yang tidak terlalu kuat berupa lontaran material pijar. Salah satu kegiatan mitigasi yang dilakukan  oleh Pusat Vulkanologi dan Mitigasi Bencana Badan Geologi adalah membuat dan menerbitkan Peta Kawasan Rawan Bencana.
+                                <br>Peta kawasan rawan bencana Gunung Api Anak krakatau terbagi atas :<br></p>
+                            <p class="isi">
+                                KRB III  : Merupakan wilayah yang sering terlanda aliran lava, gas beracun, aliran awan panas, lontaran batu (pijar) dan hujan abu lebat.<br>
+                                KRB II : Merupakan wilayah yang berpotensi terlanda aliran lava, kemungkinan aliran awan panas, kemungkinan lontaran batu (pijar) dan hujan abu lebat .<br>
+                                KRB I : Merupakan wilayah yang berpotensi hujan abu dan kemungkinan lontaran batu (pijar).<br>
+                            </p>
+                            <p class="isi">Ancaman bahaya letusan Gunung Api  Anak Krakatau paling jauh adalah daerah KRB I (radius 8 km dari pusat letusan), yaitu potensi hujan abu dan lontaran batu pijar. Pada Status Kegiatan Waspada Gunung Api Anak Krakatau, potensi ancaman bahaya letusan terhadap pengunjung/turis adalah dalam radius 1 km dari pusat kawah. Kawasan terdekat dari CA dan CAL Kepulauan Krakatau yang dihuni oleh penduduk adalah di Pulau Sebesi. Jarak Pulau Sebesi ke Gunung Api Anak Krakatau adalah ± 13 km.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        
+      <!-- END -->
+
+      <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="text-center mt-5" style="background-color: #56c9b4; margin-bottom: -16px">
+          <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+        </div>
+      </footer>
+      <!-- End -->
+</body>
+</html>

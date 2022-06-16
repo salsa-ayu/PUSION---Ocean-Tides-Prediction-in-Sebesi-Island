@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pariwisata-Snorkeling</title>
+    <!-- Libraries -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.8.0/jquery.textcomplete.js"></script>
+    <script type="text/javascript" src="jquery-comments.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='styles/FP.js')}}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/CSS.css') }}" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Dancing+Script:wght@700&family=Lobster&family=Permanent+Marker&family=Rokkitt&family=Tiro+Devanagari+Marathi&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4856028e6f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+      <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+        <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+        <span class="ml-2 pusion">PUSION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Isi -->
+    <div class="container my-4">
+      <p class="text-center p-4 pariwisata-title">Snorkeling di Pulau Sebesi</p>
+      <img
+        src="https://media.istockphoto.com/photos/woman-snorkeling-in-the-caribbean-picture-id157428459?b=1&k=20&m=157428459&s=170667a&w=0&h=tjVhzFharqMhIu71gXBTM3g7NywUWDlq2Me0poKXc1g="
+        alt="Gunung anak krakatau"
+        class="pariwisata-img mx-auto"
+        style="height: 500px"
+      />
+      <div class="container">
+        <p class="isi">
+          Berlibur di wilayah berpantai di Indonesia, seperti Bali, Yogyakarta, Karimunjawa, Pandanaran, hingga Lampung pasti memiliki fasilitas untuk melakukan snorkeling dan diving bagi wisatawan. Di daerah-daerah tersebut memiliki air
+          laut yang begitu jernih sehingga ketika menyelam akan melihat biota laut yang indah dan snorkeling adalah aktivitas paling tepat untuk dipilih wisatawan yang tidak terlalu mahir melakukan teknik penyelaman guna menikmati destinasi
+          wisata berupa laut.
+        </p>
+        <p class="isi">
+          Snorkeling merupakan kegiatan berenang dengan tubuh masih berada di permukaan air laut. Namun, snorkeler tetap harus mengenakan masker menyelam, tabung oksigen kecil, hingga memakai kaki katak karena kepala mereka akan masuk ke
+          laut untuk melihat pemandangan bawah laut.
+        </p>
+        <p class="isi">
+          Hal utama yang harus diperhatikan sebelum snorkeling adalah mempersiapkan peralatan demi keamanan. Beberapa peralatan yang dibutuhkan saat snorkeling adalah masker, snorkel dan kaki katak. Lokasi snorkeling biasanya sudah
+          menyiapkan peralatan yang dibutuhkan sehingga dapat disewa oleh pengunjung. Namun, kalian juga bisa membawa sendiri jika tidak ingin menyewa dan memakai peralatan snorkeling yang digunakan banyak orang.
+        </p>
+        <p class="isi">
+          Selain diharuskan menggunakan peralatan khusus selama snorkeling, snorkeler juga harus memperhatikan beberapa hal supaya kegiatan snorkeling tetap aman. Meskipun tidak membutuhkan keahlian khusus, yang penting harus pandai
+          berenang dan membiasakan diri bernapas menggunakan snorkel, seorang snorkeler diharuskan mematuhi instruksi dari snorkeler yang jauh lebih berpengalaman mengenai cara penggunaan alat hingga petunjuk konservasi terhadap tumbuhan
+          rapuh di dalam air laut.
+        </p>
+        <p class="isi">
+          Hal wajib yang harus dilakukan oleh snorkeler adalah tidak boleh melakukan snorkeling sendiri, harus dilakukan secara berkelompok, minimal didampingi oleh snorkeler yang sudah profesional. Beberapa tempat wisata bahkan mewajibkan
+          snorkeler harus memakai rompi tiup supaya lebih aman dalam ber-snorkeling. Rompi tersebut memiliki warna kuning atau oranye terang supaya lebih mudah diketahui dari kejauhan.
+        </p>
+        <p class="isi">Spot snorkeling paling bagus adalah di sekitar Pulau Umang-umang. Ombak yang tak terlalu besar akan membuat pengunjung dapat menikmati pemandangan alam bawah laut Sebesi dengan tenang tanpa gangguan.</p>
+      </div>
+      <div class="gallery">
+        <img src="https://akcdn.detik.net.id/community/media/visual/2021/02/03/dev-jelajahi-keindahan-pulau-sebesi-1.jpeg?w=600&q=90" />
+        <img src="https://akcdn.detik.net.id/community/media/visual/2021/02/03/dev-jelajahi-keindahan-pulau-sebesi.jpeg?w=600&q=90" />
+        <img src="https://phinemo.com/wp-content/uploads/2017/08/snorkeling-1024x576-1024x576.jpg" />
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/e5/5f/d0/going-ashore-on-anak.jpg" />
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/d2/d3/d8/snorkeling-di-sekitar.jpg" />
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/cf/16/bd/view-from-the-boat-ride.jpg" />
+      </div>
+    </div>
+
+    <!-- END -->
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="text-center mt-5" style="background-color: #56c9b4; margin-bottom: -16px">
+        <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+      </div>
+    </footer>
+    <!-- End -->
+  </body>
+</html>

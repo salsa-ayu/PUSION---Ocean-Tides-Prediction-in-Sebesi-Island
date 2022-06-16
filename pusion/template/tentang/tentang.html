@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pusion.css') }}" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Dancing+Script:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <!-- <link href="{{ url_for('static',filename='styles/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='styles/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" /> -->
+
+    <title>Tentang</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+      <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+        <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+        <span class="ml-2 pusion">PUSION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- CONTENT -->
+
+    <!-- Start About  -->
+    <div style="margin-top: 80px">
+      <div class="container my-5">
+        <h2 class="text-center my-5">Tentang Website</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="mx-auto d-block" src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" alt="Logo" width="250px" height="180px" />
+          </div>
+          <div class="col-md-8" style="text-align: justify; line-height: 2">
+            <p>
+              Website <b>Pusion - Pulo Sawesi Prediction</b> adalah website yang dapat digunakan untuk melakukan prediksi terhadap pasang dan surut air di Pulau Sebesi. Prediksi pasang dan surut air ini dapat dimanfaatkan dalam sektor
+              pariwisata sebagai acuan untuk kegiatan wisata terutama di lingkungan perairan. Selain itu, website ini juga berisi rekomendasi paket tour, penginapan, dan lokasi pariwisata yang ada di Pulau Sebesi. Pelengkap rekomendasi ini
+              diharapkan dapat menarik perhatian wisatawan untuk berkunjung ke Pulau Sebesi yang indah ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+
+    <!-- Start Team -->
+    <div  style="background-color: #f5f6f6" style="margin-top: 40px">
+      <div class="container">
+        <div class="my-5 pb-1">
+          <h2 class="text-center my-5">Team</h2>
+          <div>
+            <div class="row mt-5 text-center justify-content-center">
+              <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem">
+                  <a href="https://www.linkedin.com/in/fadillah-nur-889173229/" class="text-dark text-decoration-none">
+                    <img src="https://drive.google.com/uc?export=view&id=11zZ2D7QfVgnjMAxoQKfD5iZr6I5tH_6o" class="card-img-top" alt="Fadillah" height="287.5px" />
+                    <div class="card-body">
+                      <h6 class="card-title">Fadillah Nur Istiqomah</h6>
+                      <p class="card-text">Deployment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem">
+                  <a href="http://www.linkedin.com/in/hana-yunus-putri-b00849204" class="text-dark text-decoration-none">
+                    <img src="https://drive.google.com/uc?export=view&id=1AVFs2Q-dewCJYs0N4c_pgrB0gaFCsmMG" class="card-img-top" alt="Hana" height="287.5px" />
+                    <div class="card-body">
+                      <h6 class="card-title">Hana Yunus Putri</h6>
+                      <p class="card-text">Modelling</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem">
+                  <a href="https://id.linkedin.com/in/adjie-husaini-1ba969141/" class="text-dark text-decoration-none">
+                    <img src="https://drive.google.com/uc?export=view&id=1FHbC-7PPxZ74ZweZiN3tJ0Vwhiow0X5U" class="card-img-top" alt="Adjie" height="287.5px" />
+                    <div class="card-body">
+                      <h6 class="card-title">Mhd. Adjie Husaini</h6>
+                      <p class="card-text">Modelling</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row m-5 px-5 text-center justify-content-center">
+              <div class="col-md-6" style="padding-left: 100px">
+                <div class="card mx-auto" style="width: 18rem">
+                  <a href="https://www.linkedin.com/in/salsabila-ayuni-kaffah-77a90b219/" class="text-dark text-decoration-none">
+                    <img src="https://drive.google.com/uc?export=view&id=1pAACqhcEHUsTrMORspE9cpbtyYqSUZ9N" class="card-img-top" alt="Salsa" height="287.5px" />
+                    <div class="card-body">
+                      <h6 class="card-title">Salsabila Ayuni Kaffah</h6>
+                      <p class="card-text">Deployment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6" style="padding-right: 100px">
+                <div class="card mx-auto" style="width: 18rem">
+                  <a href="https://www.linkedin.com/in/siti-suharyanti-1276b616a/" class="text-dark text-decoration-none">
+                    <img src="https://drive.google.com/uc?export=view&id=1TJVAIog1Hl2szqRSKsoYLUurLl5fzQ-r" class="card-img-top" alt="Siti" height="287.5px" />
+                    <div class="card-body">
+                      <h6 class="card-title">Siti Suharyanti</h6>
+                      <p class="card-text">Deployment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Team -->
+
+    <!-- END CONTENT -->
+
+    <!-- START FOOTER -->
+    <footer class="mt-auto">
+      <div class="text-center" style="background-color: #56c9b4; margin-bottom: -16px">
+        <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>

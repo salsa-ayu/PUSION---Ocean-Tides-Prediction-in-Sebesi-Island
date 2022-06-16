@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/pusion.css') }}" />
+
+    <!-- Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Fjalla+One&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter&family=Concert+One&family=Dancing+Script:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet" /> -->
+
+    <!-- Vendor CSS Files -->
+    <!-- <link href="{{ url_for('static',filename='styles/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" /> -->
+    <link href="{{ url_for('static',filename='styles/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='styles/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='styles/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='styles/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
+
+    <title>Home</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #56c9b4">
+      <a class="navbar-brand ml-5" href="{{url_for('index')}}">
+        <img src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" width="40" height="26" class="d-inline-block align-top ml-3" alt="logo" />
+        <span class="ml-2 pusion">PUSION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 my-1 pr-2">
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('prediksi')}}">Prediksi</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('wisata')}}">Wisata</a>
+          </li>
+          <li class="nav-item ml-4 active">
+            <a class="nav-link" href="{{url_for('tentang')}}">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- CONTENT -->
+
+    <!-- Start Landing Page -->
+    <div class="background-home">
+      <div class="bg-depan">
+        <div class="text-center text-white mt-5 pt-4">
+          <h3 class="welcome" style="margin-top: 130px">Welcome to</h3>
+          <h1 class="mt-4 pt-4 pulau font-weight-bold">Pulo Sawesi Prediction</h1>
+          <!-- <p class="lampung pt-2">---------- Kabupaten Lampung Selatan, Provinsi Lampung ----------</p> -->
+          <!-- <div><a href="#mulai" class="btn px-5 text-white pt-2" style="background-color: #56c9b4">Get Started</a></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start Info Prediksi -->
+    <div id="mulai" style="background-color: #f5f6f6">
+      <div class="container text-center my-5 pb-5 pt-4">
+        <h4 class="my-4 intro">Pusion adalah solusi pergi liburan tanpa rasa khawatir!</h4>
+        <p class="text-center" style="text-align: justify; line-height: 2">
+          Pusion (Pulo Sawesi Prediction) menyediakan sistem prediksi pasang-surut air laut di Pulau Sebesi untuk menentukan waktu yang tepat liburan kalian. Pasang surut air laut dapat digunakan untuk menentukan waktu yang tepat
+          pemberangkatan transportasi laut, kunjungan ke pantai, snorkeling, memancing, dan kegiatan liburan lainnya yang berhubungan dengan air.
+        </p>
+        <h4 class="my-4 intro">Sebelum liburan, jangan lupa buka pusion :)</h4>
+        <button id="myBtn" class="btn text-light text-center px-3 mt-3" style="background-color: #56c9b4"><a href="{{url_for('prediksi')}}" class="text-white text-decoration-none">Mulai Prediksi</a></button>
+      </div>
+    </div>
+    <!-- End Info Prediksi -->
+
+    <!-- Start About 1-->
+    <div class="my-5 py-5">
+      <div id="about" class="container">
+        <!-- <h2 class="text-center my-5">Pulau Sebesi</h2> -->
+        <div class="row">
+          <div class="col-md-6 py-2">
+            <img class="mx-auto d-block" src="https://drive.google.com/uc?export=view&id=1tdTBDkcERWeQkHzd4gS-v1-v8HlnWdNG" alt="pulau sebesi & desa tejang" width="520px" height="480px" />
+          </div>
+          <div class="col-md-6 my-auto" style="text-align: justify; line-height: 2">
+            <h2 class="mb-3">Pulau Sebesi dan Desa Tejang</h2>
+            <p><b>Pulau Sebesi</b> (Sebesi Island) adalah sebuah pulau yang secara administratif berada di wilayah Desa Tejang, Kecamatan Rajabasa, Kabupaten Lampung Selatan, Provinsi Lampung, Indonesia.</p>
+            <button onclick="myFunction()" id="myBtn" class="btn text-light text-center px-3" style="background-color: #56c9b4"><a href="{{url_for('about_sebesi')}}" class="text-white text-decoration-none">Baca Selengkapnya</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About 1-->
+
+    <!-- Start Gallery -->
+    <div id="gallery" class="gallery" style="background-color: #f5f6f6">
+      <div class="container my-5 pb-5">
+        <h2 class="text-center my-5 pb-2 pt-2">Galeri</h2>
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="http://www.explorepulau.id/images/open-trip/Sebesi/1.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="http://www.explorepulau.id/images/open-trip/Sebesi/1.jpg" alt="galeri1" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="http://www.explorepulau.id/images/open-trip/Sebesi/2.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="http://www.explorepulau.id/images/open-trip/Sebesi/2.jpg" alt="galeri2" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="http://www.explorepulau.id/images/open-trip/Sebesi/4.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="http://www.explorepulau.id/images/open-trip/Sebesi/4.jpg" alt="galeri3" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="http://www.explorepulau.id/images/open-trip/Sebesi/3.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="http://www.explorepulau.id/images/open-trip/Sebesi/3.jpg" alt="galeri4" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="https://thumbs.dreamstime.com/b/sebesi-island-pier-wooden-boat-arrive-lampung-indonesia-55543940.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="https://thumbs.dreamstime.com/b/sebesi-island-pier-wooden-boat-arrive-lampung-indonesia-55543940.jpg" alt="galeri5" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="https://c8.staticflickr.com/6/5021/5689126527_8e70e03522_b.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="https://c8.staticflickr.com/6/5021/5689126527_8e70e03522_b.jpg" alt="galeri6" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a href="https://ivonlim.files.wordpress.com/2013/07/dsc_4644.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="https://ivonlim.files.wordpress.com/2013/07/dsc_4644.jpg" alt="galeri7" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-1">
+            <div class="gallery-item">
+              <a
+                href="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2021/02/04/9f8eb7ee-ddb3-40e8-94dd-62a4f3d85fb9-1612444692119-311a1d76d687575c054d4c8c4eb6d75c.jpg"
+                class="galleery-lightbox"
+                data-gallery="gallery-item"
+              >
+                <img
+                  src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2021/02/04/9f8eb7ee-ddb3-40e8-94dd-62a4f3d85fb9-1612444692119-311a1d76d687575c054d4c8c4eb6d75c.jpg"
+                  alt="galeri-8"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start About Website -->
+    <div class="my-5 pb-3">
+      <div class="container" id="pred">
+        <h2 class="text-center mb-5 mt-3">Tentang Website</h2>
+        <div class="row">
+          <div class="col-md-6 py-2" style="text-align: justify; line-height: 2">
+            <p>
+              Website <b>Pusion - Pulo Sawesi Prediction</b> adalah website yang dapat digunakan untuk melakukan prediksi terhadap pasang dan surut air di Pulau Sebesi. Prediksi pasang dan surut air ini dapat dimanfaatkan dalam sektor
+              pariwisata sebagai acuan untuk kegiatan wisata terutama di lingkungan perairan. Selain itu, website ini juga berisi rekomendasi paket tour, penginapan, dan lokasi pariwisata yang ada di Pulau Sebesi. Pelengkap rekomendasi ini
+              diharapkan dapat menarik perhatian wisatawan untuk berkunjung ke Pulau Sebesi yang indah ini.
+            </p>
+          </div>
+          <div class="col-md-6 align-items-center">
+            <img class="mt-4 mx-5" src="https://drive.google.com/uc?export=view&id=14_g2rjNJLfRgYdPLEDOxhj_gyS3AXtl5" alt="Logo" width="280px" height="190px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Website -->
+
+    <!-- Start Recommendation -->
+    <!-- <div class="bg-white container">
+      <h2 class="text-center mt-3">Recommendation</h2>
+      <div class="row my-5 pb-5 text-center">
+        <div class="col-md-4">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Recommendation -->
+
+    <!-- END CONTENT -->
+
+    <!-- START FOOTER -->
+    <footer class="mt-auto">
+      <div class="text-center" style="background-color: #56c9b4; margin-bottom: -16px">
+        <p class="text-light py-3">Copyright &copy; 2022 SANEBOX</p>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script> -->
+
+    <!-- Vendor JS Files -->
+    <script src="{{url_for('static', filename='styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='styles/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static', filename='styles/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{url_for('static', filename='styles/assets/js/main.js')}}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>

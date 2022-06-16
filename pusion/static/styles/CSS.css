@@ -1,0 +1,198 @@
+/* nav ul {
+  list-style-type: none;
+}
+nav li {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+nav li::before,
+nav li::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  z-index: -1;
+}
+nav li::before {
+  height: 80%;
+  top: 10%;
+  left: -0.3em;
+  filter: brightness(0.8);
+}
+nav li::after {
+  height: 60%;
+  top: 20%;
+  left: -0.57em;
+  filter: brightness(0.6);
+  border-radius: 25px 25px;
+}
+nav li a {
+  text-decoration: none;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  transform: translateX(-0.65em);
+  transition: 0.5s;
+  border-radius: 50%;
+} */
+.image {
+  opacity: 1;
+  display: block;
+  /* width: 303px; */
+  height: 202px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 25px;
+}
+
+.card:hover .image {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(17, 17, 17);
+  font-size: 14px;
+  line-height: 15px;
+  opacity: 1;
+  text-align: center;
+}
+
+i.search {
+  margin-left: -38px;
+  color: black;
+}
+
+.line {
+  line-height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.download {
+  margin-top: none;
+}
+
+.card-deck-2 {
+  margin-left: 215px;
+}
+
+.cont-isi {
+  margin-top: 100px;
+}
+.card-title {
+  font-family: "Viga", sans-serif;
+  font-size: 20px;
+}
+.gallery {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 3px #ddd;
+  box-sizing: border-box;
+}
+.judul-penginapan {
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: rgb(23, 162, 139);
+}
+.harga-penginapan {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Rokkitt", serif;
+}
+.pariwisata-title {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  margin-top: 80px;
+}
+img.pariwisata-img {
+  display: block;
+  padding-bottom: 20px;
+  height: 600px;
+}
+blockquote {
+  max-width: 1300px;
+  padding: 40px 70px;
+  background: #fafafa;
+  color: #000000;
+  position: relative;
+}
+blockquote::before,
+blockquote::after {
+  font-size: 350%;
+  font-family: arial;
+  display: block;
+  position: absolute;
+}
+blockquote::before {
+  content: open-quote;
+  left: 30px;
+  line-height: 40px;
+}
+blockquote::after {
+  content: close-quote;
+  right: 30px;
+  line-height: 30px;
+}
+.isi {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .detail-GAK{
+  margin-left: 90px;
+  margin-right: 90px;
+} */
+.title-detail {
+  font-family: "Tiro Devanagari Marathi", serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-hover-zoom--colorize {
+  transition: transform 0.5s, filter 2.5s ease-in-out;
+}
+.card-hover-zoom--colorize:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.pusion {
+  font-size: 18px;
+  /* font-size: 19px; */
+  font-family: "Kdam Thmor Pro", sans-serif;
+  /* font-family: "Fjalla One", sans-serif; */
+  letter-spacing: 1.5px;
+}
